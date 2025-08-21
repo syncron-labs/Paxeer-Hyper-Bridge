@@ -1,0 +1,58 @@
+# Chain configurations for Hyperlane Warp UI
+# Schema: https://github.com/hyperlane-xyz/hyperlane-monorepo/blob/main/typescript/sdk/src/metadata/chainMetadataTypes.ts
+
+# Paxeer Network configuration
+paxeer:
+  chainId: 80000
+  domainId: 80000
+  name: paxeer
+  displayName: Paxeer Network
+  protocol: ethereum
+  nativeToken:
+    name: Paxeer
+    symbol: PAX
+    decimals: 18
+  rpcUrls:
+    - http: https://rpc-paxeer-network-djjz47ii4b.t.conduit.xyz
+  blockExplorers:
+    - name: Paxscan
+      url: https://paxscan.paxeer.app
+      apiUrl: https://paxscan.paxeer.app/api
+      family: blockscout
+  blocks:
+    confirmations: 1
+    reorgPeriod: 1
+    estimateBlockTime: 3
+  transactionOverrides:
+    maxFeePerGas: 20000000000
+    maxPriorityFeePerGas: 20000000000
+  isTestnet: false
+  logoURI: '/logos/paxeer.png'
+
+# Base Mainnet configuration
+base:
+  chainId: 8453
+  domainId: 8453
+  name: base
+  displayName: Base Mainnet
+  protocol: ethereum
+  nativeToken:
+    name: Ether
+    symbol: ETH
+    decimals: 18
+  rpcUrls:
+    - http: https://base-mainnet.g.alchemy.com/v2/0KD6bIDeLf5vD2LJvanlW
+  blockExplorers:
+    - name: Basescan
+      url: https://basescan.org
+      apiUrl: https://api.basescan.org/api
+      family: etherscan
+  blocks:
+    confirmations: 3
+    reorgPeriod: 1
+    estimateBlockTime: 2
+  transactionOverrides:
+    maxFeePerGas: 20000000000
+    maxPriorityFeePerGas: 20000000000
+  isTestnet: false
+  logoURI: '/logos/base.png'

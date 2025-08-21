@@ -1,0 +1,60 @@
+# A list of Warp Route token configs
+# These configs will be merged with the warp routes in the configured registry
+# The input here is typically the output of the Hyperlane CLI warp deploy command
+---
+# yaml-language-server: $schema=../schema.json
+tokens:
+  - addressOrDenom: "0x52a8852eE90CF6D72c2A8B307bDAaE759e702e1f"
+    chainName: paxeer
+    collateralAddressOrDenom: "0xD0C1a714c46c364DBDd4E0F7b0B6bA5354460dA7"
+    connections:
+      - token: ethereum|base|0x29E1f94F6b209B57eCdc1fE87448a6d085a78a5a
+    decimals: 18
+    name: Wrapped Ether
+    standard: EvmHypCollateral
+    symbol: WETH
+  - addressOrDenom: "0x29E1f94F6b209B57eCdc1fE87448a6d085a78a5a"
+    chainName: base
+    collateralAddressOrDenom: "0x4200000000000000000000000000000000000006"
+    connections:
+      - token: ethereum|paxeer|0x52a8852eE90CF6D72c2A8B307bDAaE759e702e1f
+    decimals: 18
+    name: Wrapped Ether
+    standard: EvmHypCollateral
+    symbol: WETH
+  - chainName: paxeer
+    standard: EvmHypCollateral
+    decimals: 18
+    symbol: WPAX
+    name: Wrapped Paxeer
+    addressOrDenom: "0xe7Ca1BbfAb347ee3Fa4870856f0d0d8761BC2987"
+    collateralAddressOrDenom: "0x17D6592A6B27564F3D0810D79405D366a4aC69e5"
+    connections:
+      - token: ethereum|base|0x2809d2D80dc38A5A489A9E77Db2Cd9996526f629
+  - chainName: base
+    standard: EvmHypSynthetic
+    decimals: 18
+    symbol: WPAX
+    name: Wrapped Paxeer
+    addressOrDenom: "0x2809d2D80dc38A5A489A9E77Db2Cd9996526f629"
+    connections:
+      - token: ethereum|paxeer|0xe7Ca1BbfAb347ee3Fa4870856f0d0d8761BC2987
+  - chainName: paxeer
+    standard: EvmHypCollateral
+    decimals: 6
+    symbol: USDC
+    name: USDC
+    addressOrDenom: "0xA05031da7Be049b93FD4b2a8068498521b2aECb7"
+    collateralAddressOrDenom: "0x29E1f94F6b209B57eCdc1fE87448a6d085a78a5a"
+    connections:
+      - token: ethereum|base|0x8b53641ac62304019a2C8D1146Cf2fD3506d489C
+  - chainName: base
+    standard: EvmHypCollateral
+    decimals: 6
+    symbol: USDC
+    name: USD Coin
+    addressOrDenom: "0x8b53641ac62304019a2C8D1146Cf2fD3506d489C"
+    collateralAddressOrDenom: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    connections:
+      - token: ethereum|paxeer|0xA05031da7Be049b93FD4b2a8068498521b2aECb7
+options: {}
