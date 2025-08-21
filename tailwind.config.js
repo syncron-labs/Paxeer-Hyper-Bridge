@@ -5,6 +5,7 @@ const defaultColors = require('tailwindcss/colors');
 
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     fontFamily: {
       sans: ['var(--font-main)'],
@@ -20,18 +21,25 @@ module.exports = {
       colors: {
         black: '#010101',
         white: '#ffffff',
-        gray: { ...defaultColors.gray, '150': '#EBEDF0', '250': '#404040', '350': '#6B6B6B' },
+        gray: { 
+          ...defaultColors.gray, 
+          '150': '#EBEDF0', 
+          '250': '#404040', 
+          '350': '#6B6B6B',
+          '750': '#1a1a1a',
+          '850': '#0d0d0d',
+        },
         primary: {
-          50: '#35b7ff',
-          100: '#35b7ff',
-          200: '#35b7ff',
-          300: '#35b7ff',
+          50: '#e6f5ff',
+          100: '#ccebff',
+          200: '#99d7ff',
+          300: '#66c3ff',
           400: '#35b7ff',
           500: '#35b7ff',
-          600: '#35b7ff',
-          700: '#35b7ff',
-          800: '#35b7ff',
-          900: '#35b7ff',
+          600: '#2a92cc',
+          700: '#206e99',
+          800: '#154966',
+          900: '#0b2533',
         },
         accent: {
           50: '#74f05a',

@@ -18,8 +18,8 @@ export function ConnectWalletButton() {
       multiProvider={multiProvider}
       onClickWhenUnconnected={() => setShowEnvSelectModal(true)}
       onClickWhenConnected={() => setIsSideBarOpen(true)}
-      className="rounded-lg bg-white"
-      countClassName="bg-accent-500"
+      className="rounded-lg bg-transparent border border-primary-400 hover:bg-primary-900/30 text-white px-4 py-2 transition-colors duration-200"
+      countClassName="bg-primary-500 text-white"
       chainName={originChainName}
     />
   );
