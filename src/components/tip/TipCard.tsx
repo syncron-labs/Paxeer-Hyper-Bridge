@@ -11,7 +11,7 @@ export function TipCard() {
   if (!show) return null;
   return (
     <Card className="w-100 p-2 sm:w-[31rem]">
-      <h2 className="text-primary-500">Bridge Tokens with Paxeer HyperRoute!</h2>
+      <h2 className="text-white">Bridge Tokens with Paxeer HyperRoute!</h2>
       <div className="flex items-end justify-between">
         <p className="mt-1 max-w-[75%] text-xs">
           Paxeer HyperRoute make it easy to permissionlessly take your tokens interchain. 
@@ -21,7 +21,7 @@ export function TipCard() {
           href={links.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="ml-2 flex items-center rounded-lg bg-gray-100 px-3 py-1.5 text-xs text-primary-500 transition-all hover:bg-gray-200 active:bg-gray-300 sm:text-sm"
+          className="ml-2 flex items-center rounded-lg bg-background px-3 py-1.5 text-xs text-white transition-all hover:bg-gray-200 active:bg-gray-300 sm:text-sm"
         >
           <Image src={InfoCircle} width={12} alt="" />
           <span className="ml-1.5 hidden text-sm sm:inline">More</span>

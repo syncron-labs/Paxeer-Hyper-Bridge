@@ -1,0 +1,13 @@
+--2025-08-21 13:54:26--  https://raw.githubusercontent.com/Paxeer-Network/Paxeer-brand-assets/refs/heads/main/Logo_text.webp
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8000::154, 2606:50c0:8003::154, 2606:50c0:8001::154, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8000::154|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 118001 (115K) [image/webp]
+Saving to: ‘Logo_text.webp’
+
+     0K .......... .......... .......... .......... .......... 43% 20.3M 0s
+    50K .......... .......... .......... .......... .......... 86% 60.3M 0s
+   100K .......... .....                                      100%  298M=0.003s
+
+2025-08-21 13:54:26 (34.4 MB/s) - ‘Logo_text.webp’ saved [118001/118001]
+

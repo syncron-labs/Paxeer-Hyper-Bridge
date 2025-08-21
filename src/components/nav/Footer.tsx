@@ -2,7 +2,6 @@ import { DiscordIcon, GithubIcon, HyperlaneLogo, TwitterIcon } from '@hyperlane-
 import Link from 'next/link';
 import { ReactNode } from 'react';
 import { links } from '../../consts/links';
-import { Color } from '../../styles/Color';
 
 type FooterLink = {
   title: string;
@@ -26,7 +25,7 @@ const footerLinks: FooterLink[] = [
 export function Footer() {
   return (
     <footer className="relative text-white">
-      <div className="relative bg-gradient-to-b from-transparent to-black/40 px-8 pb-5 pt-2 sm:pt-0">
+      <div className="relative bg-gradient-to-b from-white to-white px-8 pb-5 pt-2 sm:pt-0">
         <div className="flex flex-col items-center justify-between gap-8 sm:flex-row sm:gap-10">
           <FooterLogo />
           <FooterNav />
@@ -40,7 +39,7 @@ function FooterLogo() {
   return (
     <div className="flex items-center justify-center">
       <div className="ml-2 h-12 w-12 sm:h-14 sm:w-14">
-        <HyperlaneLogo color={Color.white} />
+        <HyperlaneLogo color="#fff" />
       </div>
       <div className="ml-6 space-y-1 text-lg font-medium sm:text-xl">
         <div>Your Interchain HyperRoute</div>

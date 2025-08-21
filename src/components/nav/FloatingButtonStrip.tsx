@@ -32,7 +32,7 @@ export function FloatingButtonStrip() {
         {config.showAddRouteButton && (
           <IconButton
             className={styles.roundedCircle}
-            title="Add route"
+            title="New Route"
             onClick={openAddWarpConfig}
           >
             <PlusIcon color={Color.primary['500']} height={26} width={26} />
